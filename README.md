@@ -10,12 +10,12 @@ Code repository for:
 ## Repository structure
 
 ```
-R/
-├── Step 1_Make binary mines map.R          # Rasterize mine polygons
-├── Step 2_Create Richness Maps from IUCN data.R  # Species richness rasters
-├── Step 3_Create plots for publication.R   # Publication figures
-├── Model and plot code.R                   # GLMMs: richness in mining vs pseudo-mining areas
-└── model summaries update.R               # GLMs: mining threat probability by taxonomic group
+Step 1_Make binary mines map.R          # Rasterize mine polygons
+Step 2_Create Richness Maps from IUCN data.R  # Species richness rasters
+Step 3_Create plots for publication.R   # Publication figures
+Model and plot code.R                   # GLMMs: richness in mining vs pseudo-mining areas
+model summaries update.R               # GLMs: mining threat probability by taxonomic group
+mining_analysis_complete.R             # Combined script: runs all five steps in sequence
 
 Data_S1.xlsx    # Per-species range overlap and threat status data (input for model summaries)
 Data S2.xlsx    # Species richness counts per buffer polygon (input for GLMMs)
@@ -100,7 +100,7 @@ The supplementary data files (`Data_S1.xlsx` and `Data S2.xlsx`) required to rep
 
 Large spatial datasets used in Steps 1–3 are not included due to size and licensing:
 
-- **Mine polygons** (74,548 polygons): obtained from S&P Global Market Intelligence (formerly SNL Metals & Mining). Access requires a commercial subscription.
+- **Mine polygons** (74,548 polygons): Tang, L. & Werner, T.T. (2023). Global mining footprint mapped from high-resolution satellite imagery. *Communications Earth & Environment*, 4, 1–12. https://doi.org/10.1038/s43247-023-00805-6. Freely available from the journal supplementary data.
 - **IUCN Red List range maps**: available from the [IUCN Spatial Data Download portal](https://www.iucnredlist.org/resources/spatial-data-download) (free registration required).
 - **World outline shapefile**: Natural Earth 1:110m land polygons, available from [naturalearthdata.com](https://www.naturalearthdata.com/downloads/110m-physical-vectors/).
 
